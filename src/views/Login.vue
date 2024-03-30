@@ -17,7 +17,7 @@
               <input type="password" v-model="password" name="password" id="password" placeholder="Password">
           </div>
           <button class="btn btn-info mt-3" @click="login">Ingresar</button>
-
+          <button class="btn btn-success mt-3" @click="redirectToRegistro">CRUD</button>
 
       </form>
 
@@ -54,6 +54,12 @@ export default{
   }
 },
 
+
+
+
+        redirectToRegistro() {
+            this.$router.push('/registro');
+        }
     }
   
 }
